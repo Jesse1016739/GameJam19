@@ -22,6 +22,7 @@ public class PlayerScript : MonoBehaviour
     private int jumps;
     public GameObject fireBall;
 
+    public GameObject spawnPoint;
     
 
     // Start is called before the first frame update
@@ -135,7 +136,7 @@ public class PlayerScript : MonoBehaviour
     }
     void FireBall()
     {
-        Instantiate(fireBall, new Vector3(0, 0, 0), Quaternion.identity);
+        Instantiate(fireBall, new Vector3(spawnPoint.transform.position.x, spawnPoint.transform.position.y, spawnPoint.transform.position.z), Quaternion.identity);
 
     }
 
