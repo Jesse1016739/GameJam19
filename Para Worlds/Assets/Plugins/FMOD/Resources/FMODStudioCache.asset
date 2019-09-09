@@ -13,18 +13,32 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
+<<<<<<< HEAD
   - {fileID: 114239945344949080}
   - {fileID: 114627313807612422}
+=======
+  - {fileID: 114370799246487488}
+  - {fileID: 114088369728190552}
+>>>>>>> master
   EditorEvents:
   - {fileID: 114511790139195310}
   EditorParameters: []
   MasterBanks:
+<<<<<<< HEAD
   - {fileID: 114627313807612422}
   StringsBanks:
   - {fileID: 114239945344949080}
   stringsBankWriteTime: 637036291653386426
   cacheVersion: 3
 --- !u!114 &114012909890844566
+=======
+  - {fileID: 114088369728190552}
+  StringsBanks:
+  - {fileID: 114370799246487488}
+  stringsBankWriteTime: 637036272603631454
+  cacheVersion: 3
+--- !u!114 &114088369728190552
+>>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36,9 +50,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Path: C:/Users/janderton2/Documents/GameJam19/Para Worlds/FMOD/Jam Gam/Build/Desktop/Master.bank
   SubDir: 
   lastModified: 637036291653436285
+=======
+  Path: C:/Users/jfoster15/Documents/GameJam19/Para Worlds/FMOD/Jam Gam/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637036272603721203
+>>>>>>> master
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -64,7 +84,11 @@ MonoBehaviour:
   - Name: Desktop
     Value: 789568
   Exists: 0
+<<<<<<< HEAD
 --- !u!114 &114239945344949080
+=======
+--- !u!114 &114370799246487488
+>>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -76,9 +100,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Path: C:/Users/janderton2/Documents/GameJam19/Para Worlds/FMOD/Jam Gam/Build/Desktop/Master.strings.bank
   SubDir: 
   lastModified: 637036291653386426
+=======
+  Path: C:/Users/jfoster15/Documents/GameJam19/Para Worlds/FMOD/Jam Gam/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637036272603631454
+>>>>>>> master
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -119,8 +149,12 @@ MonoBehaviour:
   Path: event:/Test
   guid: 96c2d48457fd104d8a45d38c122f2e7c
   Banks:
+<<<<<<< HEAD
   - {fileID: 114012909890844566}
   - {fileID: 114627313807612422}
+=======
+  - {fileID: 114088369728190552}
+>>>>>>> master
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
