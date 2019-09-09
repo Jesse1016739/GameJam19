@@ -15,9 +15,19 @@ public class PlayerScript : MonoBehaviour
 
     public float dashSpeed;
 
+    public float dashTimer;
+
+    private bool isGhost;
+    private int howManyJumps;
+    private int jumps;
+
+    
+
     // Start is called before the first frame update
     void Start()
     {
+        isGhost = false;
+
         canJump = true;
         rb = gameObject.GetComponent<Rigidbody>();
     }
@@ -25,26 +35,40 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        
+        dashTimer -= Time.deltaTime;
+
+        if(dashTimer < 0)
+        {
+            maxSpeed = 20f;
+            rb.useGravity = true;
+        }
+
+
+
         if (Input.GetKey("d"))
         {
-            rb.AddRelativeForce(Vector3.right * speed);
-            
+            this.gameObject.GetComponent<Transform>().rotation = Quaternion.Euler(0, 0, 0);
+            rb.AddRelativeForce(Vector3.forward * speed);           
         }
         if (Input.GetKey("a"))
         {
-            rb.AddRelativeForce(Vector3.left * speed);
-
+            rb.AddRelativeForce(Vector3.forward * speed);
+            this.gameObject.GetComponent<Transform>().rotation = Quaternion.Euler(0, 180, 0);
         }
+
+
+
         if (Input.GetKeyDown("space"))
         {
             Jump();
-
+        }
+        if (Input.GetKeyDown("q"))
+        {
+            Dash();
         }
 
-        if(rb.velocity.magnitude > maxSpeed)
+        if (rb.velocity.magnitude > maxSpeed)
         {
-
             rb.velocity = rb.velocity.normalized * maxSpeed;
         }
 
@@ -56,28 +80,51 @@ public class PlayerScript : MonoBehaviour
         {
             canJump = true;
             Debug.Log("canJump");
-
+            jumps = 0;
         }
 
     }
 
     void Jump()
     {
-        if(canJump)
+        if (isGhost == false)
         {
-            rb.AddRelativeForce(Vector3.up * jump);
-            canJump = false;
-
+            howManyJumps = 2;
+        }
+        if (isGhost == true)
+        {
+            howManyJumps = 1;
         }
         
+
+        if (canJump)
+        {
+            rb.AddRelativeForce(Vector3.up * jump);
+            jumps++;
+        }
+        if(howManyJumps <= jumps)
+        {
+
+            canJump = false;
+        }
     }
 
     void Dash()
     {
+        maxSpeed = dashMaxSpeed;
 
-        rb.AddRelativeForce(Vector3.right * dashSpeed);
+        
+        rb.velocity = (Vector3.forward * dashSpeed);
+        rb.useGravity = false;
+        dashTimer = .5f;
+    }
+
+    void Ghost()
+    {
+        
 
     }
+
 
 }
 
