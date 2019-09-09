@@ -45,7 +45,11 @@ public class PlayerScript : MonoBehaviour
             rb.useGravity = true;
         }
 
+        if (Input.GetKeyDown("r"))
+        {
+            Mirror();
 
+        }
 
         if (Input.GetKey("d"))
         {
@@ -93,7 +97,18 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
-
+    void Mirror()
+    {
+        if (isGhost == true)
+        {
+            isGhost = false;
+        }
+        else
+        {
+            isGhost = true;
+        }
+        Debug.Log(isGhost);
+    }
 
     void Jump()
     {
@@ -121,12 +136,15 @@ public class PlayerScript : MonoBehaviour
 
     void Dash()
     {
-        maxSpeed = dashMaxSpeed;
+        if (isGhost == true)
+        {
 
-        
-        rb.velocity = (Vector3.forward * dashSpeed);
-        rb.useGravity = false;
-        dashTimer = .5f;
+            maxSpeed = dashMaxSpeed;
+            rb.velocity = (Vector3.forward * dashSpeed);
+            rb.useGravity = false;
+            dashTimer = .5f;
+            
+        }
     }
 
     void Ghost()
@@ -136,8 +154,10 @@ public class PlayerScript : MonoBehaviour
     }
     void FireBall()
     {
-        Instantiate(fireBall, new Vector3(spawnPoint.transform.position.x, spawnPoint.transform.position.y, spawnPoint.transform.position.z), Quaternion.identity);
-
+        if (isGhost == false)
+        {
+            Instantiate(fireBall, new Vector3(spawnPoint.transform.position.x, spawnPoint.transform.position.y, spawnPoint.transform.position.z), Quaternion.identity);
+        }
     }
 
 }
