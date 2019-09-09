@@ -1,8 +1,12 @@
 sceneSetups:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - path: Assets/Scenes/Combined Level.unity
 =======
 - path: Assets/Scenes/Boi Tutorial.unity
+>>>>>>> Stashed changes
+=======
+- path: Assets/Scenes/steve chill zone.unity
 >>>>>>> Stashed changes
   isLoaded: 1
   isActive: 1
