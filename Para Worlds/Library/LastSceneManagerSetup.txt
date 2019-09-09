@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/Combined Level.unity
-=======
-- path: Assets/Scenes/Boi Tutorial.unity
->>>>>>> master
   isLoaded: 1
   isActive: 1
