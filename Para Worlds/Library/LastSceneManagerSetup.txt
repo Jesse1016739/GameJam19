@@ -1,12 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Test Level.unity
-=======
-<<<<<<< HEAD
 - path: Assets/Scenes/steve chill zone.unity
-=======
-- path: Assets/Scenes/Boi Tutorial.unity
->>>>>>> master
->>>>>>> master
   isLoaded: 1
   isActive: 1

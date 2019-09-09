@@ -20,6 +20,7 @@ public class PlayerScript : MonoBehaviour
     private bool isGhost;
     private int howManyJumps;
     private int jumps;
+    public GameObject fireBall;
 
     
 
@@ -57,7 +58,10 @@ public class PlayerScript : MonoBehaviour
         }
 
 
-
+        if (Input.GetKeyDown("e"))
+        {
+            FireBall();
+        }
         if (Input.GetKeyDown("space"))
         {
             Jump();
@@ -76,14 +80,19 @@ public class PlayerScript : MonoBehaviour
     }
     void OnCollisionEnter(Collision col)
     {
-        if(col.gameObject.tag == "Floor")
+        if(col.gameObject.tag == "Floor"|| col.gameObject.tag == "StoneFloor")
         {
             canJump = true;
             Debug.Log("canJump");
             jumps = 0;
         }
-
+        if (col.gameObject.tag == "GhostWall")
+        {
+            col.gameObject.GetComponent<BoxCollider>().enabled = false;
+        }
     }
+
+
 
     void Jump()
     {
@@ -121,10 +130,14 @@ public class PlayerScript : MonoBehaviour
 
     void Ghost()
     {
-        
+       // change look;
+             
+    }
+    void FireBall()
+    {
+        Instantiate(fireBall, new Vector3(0, 0, 0), Quaternion.identity);
 
     }
-
 
 }
 
