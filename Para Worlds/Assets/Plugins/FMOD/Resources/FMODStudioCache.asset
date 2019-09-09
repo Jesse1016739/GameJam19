@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
+<<<<<<< HEAD
   - {fileID: 114626168677435754}
   - {fileID: 114779316871943202}
   EditorEvents:
@@ -25,6 +26,19 @@ MonoBehaviour:
   stringsBankWriteTime: 637036311415135336
   cacheVersion: 3
 --- !u!114 &114626168677435754
+=======
+  - {fileID: 114931275731388198}
+  - {fileID: 114240298282528034}
+  EditorEvents:
+  - {fileID: 114745880545689038}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 114240298282528034}
+  StringsBanks:
+  - {fileID: 114931275731388198}
+  stringsBankWriteTime: 637036272603631454
+  cacheVersion: 3
+--- !u!114 &114188705178552268
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -34,17 +48,38 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
+  m_Name: bank:/Master.bank
   m_EditorClassIdentifier: 
-  Path: C:/Users/Sgreenland/Downloads/GameJam19/Para Worlds/FMOD/Jam Gam/Build/Desktop/Master.strings.bank
+  Path: C:/Users/jfoster15/Documents/GameJam19/Para Worlds/FMOD/Jam Gam/Build/Desktop/Master.bank
   SubDir: 
-  lastModified: 637036311415135336
+  lastModified: 637036272603721203
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 730
+    Value: 789568
   Exists: 1
---- !u!114 &114647508554282978
+--- !u!114 &114240298282528034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/jfoster15/Documents/GameJam19/Para Worlds/FMOD/Jam Gam/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637036272603721203
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 789568
+  Exists: 1
+--- !u!114 &114745880545689038
+>>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -56,6 +91,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: event:/Test
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  Path: C:/Users/Sgreenland/Downloads/GameJam19/Para Worlds/FMOD/Jam Gam/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637036311415135336
+=======
+  Path: event:/Test
+  guid: 96c2d48457fd104d8a45d38c122f2e7c
+  Banks:
+  - {fileID: 114240298282528034}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 72594
+--- !u!114 &114767407293186922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/janderton2/Documents/GameJam19/Para Worlds/FMOD/Jam Gam/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637036317923034023
+>>>>>>> master
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 730
+  Exists: 1
+<<<<<<< HEAD
+--- !u!114 &114647508554282978
+=======
+--- !u!114 &114909670217653360
+>>>>>>> master
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Path: event:/Test
   guid: 96c2d48457fd104d8a45d38c122f2e7c
   Banks:
@@ -68,6 +157,16 @@ MonoBehaviour:
   MaxDistance: 0
   Length: 72594
 --- !u!114 &114779316871943202
+=======
+  Path: C:/Users/janderton2/Documents/GameJam19/Para Worlds/FMOD/Jam Gam/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637036317923084681
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 789568
+  Exists: 1
+--- !u!114 &114931275731388198
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -77,13 +176,40 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: C:/Users/Sgreenland/Downloads/GameJam19/Para Worlds/FMOD/Jam Gam/Build/Desktop/Master.bank
+  Path: C:/Users/jfoster15/Documents/GameJam19/Para Worlds/FMOD/Jam Gam/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637036311415205150
+  lastModified: 637036272603631454
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 789568
+    Value: 730
+  Exists: 1
+--- !u!114 &114969074368363174
+>>>>>>> master
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  Path: C:/Users/Sgreenland/Downloads/GameJam19/Para Worlds/FMOD/Jam Gam/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637036311415205150
+=======
+  Path: C:/Users/jfoster15/Documents/GameJam19/Para Worlds/FMOD/Jam Gam/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637036272603631454
+>>>>>>> master
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 730
   Exists: 1
