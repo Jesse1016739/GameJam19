@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< Updated upstream
 - path: Assets/Scenes/Combined Level.unity
+=======
+- path: Assets/Scenes/Boi Tutorial.unity
+>>>>>>> Stashed changes
   isLoaded: 1
   isActive: 1
