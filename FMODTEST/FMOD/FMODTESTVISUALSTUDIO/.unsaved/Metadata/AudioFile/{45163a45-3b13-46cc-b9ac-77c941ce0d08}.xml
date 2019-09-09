@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{45163a45-3b13-46cc-b9ac-77c941ce0d08}">
+		<property name="assetPath">
+			<value>ChangeGun_41khz_1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.20301587301587301</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{01712a64-2409-47a3-bbb7-f2890f76b7c6}</destination>
+		</relationship>
+	</object>
+</objects>
