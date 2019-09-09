@@ -23,6 +23,8 @@ public class PlayerScript : MonoBehaviour
     public GameObject fireBall;
 
     public GameObject spawnPoint;
+    FMOD.Studio.EventInstance DashAudio;
+    FMOD.Studio.EventInstance JumpAudio;
     
 
     // Start is called before the first frame update
@@ -32,6 +34,8 @@ public class PlayerScript : MonoBehaviour
 
         canJump = true;
         rb = gameObject.GetComponent<Rigidbody>();
+        DashAudio = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Abilities/Dash");
+        JumpAudio = FMODUnity.RuntimeManager.CreateInstance(""); 
     }
 
     // Update is called once per frame
@@ -74,6 +78,7 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKeyDown("q"))
         {
             Dash();
+            DashAudio.start();
         }
 
         if (rb.velocity.magnitude > maxSpeed)
