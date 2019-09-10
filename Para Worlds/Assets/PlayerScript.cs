@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerScript : MonoBehaviour
 {
+    
 
     private Rigidbody rb;
     public float speed;
@@ -26,6 +28,10 @@ public class PlayerScript : MonoBehaviour
     FMOD.Studio.EventInstance DashAudio;
     FMOD.Studio.EventInstance JumpAudio;
     
+    
+
+    
+    
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +41,11 @@ public class PlayerScript : MonoBehaviour
         canJump = true;
         rb = gameObject.GetComponent<Rigidbody>();
         DashAudio = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Abilities/Dash");
-        JumpAudio = FMODUnity.RuntimeManager.CreateInstance(""); 
+        JumpAudio = FMODUnity.RuntimeManager.CreateInstance("");
+
+        
+
+        
     }
 
     // Update is called once per frame
@@ -78,7 +88,7 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKeyDown("q"))
         {
             Dash();
-            DashAudio.start();
+            
         }
 
         if (rb.velocity.magnitude > maxSpeed)
@@ -148,14 +158,14 @@ public class PlayerScript : MonoBehaviour
             rb.velocity = (Vector3.forward * dashSpeed);
             rb.useGravity = false;
             dashTimer = .5f;
-            
+            DashAudio.start();
         }
     }
 
     void Ghost()
     {
        // change look;
-             
+       
     }
     void FireBall()
     {
