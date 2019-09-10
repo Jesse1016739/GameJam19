@@ -23,6 +23,8 @@ public class PlayerScript : MonoBehaviour
     public GameObject fireBall;
 
     public GameObject spawnPoint;
+    FMOD.Studio.EventInstance DashAudio;
+    FMOD.Studio.EventInstance JumpAudio;
     
 
     // Start is called before the first frame update
@@ -32,6 +34,8 @@ public class PlayerScript : MonoBehaviour
 
         canJump = true;
         rb = gameObject.GetComponent<Rigidbody>();
+        DashAudio = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Abilities/Dash");
+        JumpAudio = FMODUnity.RuntimeManager.CreateInstance(""); 
     }
 
     // Update is called once per frame
@@ -45,7 +49,11 @@ public class PlayerScript : MonoBehaviour
             rb.useGravity = true;
         }
 
+        if (Input.GetKeyDown("r"))
+        {
+            Mirror();
 
+        }
 
         if (Input.GetKey("d"))
         {
@@ -70,6 +78,7 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKeyDown("q"))
         {
             Dash();
+            DashAudio.start();
         }
 
         if (rb.velocity.magnitude > maxSpeed)
@@ -93,7 +102,18 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
-
+    void Mirror()
+    {
+        if (isGhost == true)
+        {
+            isGhost = false;
+        }
+        else
+        {
+            isGhost = true;
+        }
+        Debug.Log(isGhost);
+    }
 
     void Jump()
     {
@@ -121,12 +141,15 @@ public class PlayerScript : MonoBehaviour
 
     void Dash()
     {
-        maxSpeed = dashMaxSpeed;
+        if (isGhost == true)
+        {
 
-        
-        rb.velocity = (Vector3.forward * dashSpeed);
-        rb.useGravity = false;
-        dashTimer = .5f;
+            maxSpeed = dashMaxSpeed;
+            rb.velocity = (Vector3.forward * dashSpeed);
+            rb.useGravity = false;
+            dashTimer = .5f;
+            
+        }
     }
 
     void Ghost()
@@ -136,8 +159,10 @@ public class PlayerScript : MonoBehaviour
     }
     void FireBall()
     {
-        Instantiate(fireBall, new Vector3(spawnPoint.transform.position.x, spawnPoint.transform.position.y, spawnPoint.transform.position.z), Quaternion.identity);
-
+        if (isGhost == false)
+        {
+            Instantiate(fireBall, new Vector3(spawnPoint.transform.position.x, spawnPoint.transform.position.y, spawnPoint.transform.position.z), Quaternion.identity);
+        }
     }
 
 }

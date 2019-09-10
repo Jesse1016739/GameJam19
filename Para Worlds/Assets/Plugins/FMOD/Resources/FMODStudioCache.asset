@@ -13,23 +13,28 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114716200941143834}
-  - {fileID: 114700004205618882}
+  - {fileID: 114402670390862590}
+  - {fileID: 114552262169116728}
   EditorEvents:
-  - {fileID: 114797776942111088}
-  - {fileID: 114506062234231424}
-  - {fileID: 114538633290707006}
-  - {fileID: 114662404650502720}
-  - {fileID: 114922632792290580}
-  - {fileID: 114073135091785228}
+  - {fileID: 114436864010659998}
+  - {fileID: 114551032680955310}
+  - {fileID: 114987686354195198}
+  - {fileID: 114184733324918066}
+  - {fileID: 114823245409002060}
+  - {fileID: 114239345080602498}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 114700004205618882}
+  - {fileID: 114552262169116728}
   StringsBanks:
+<<<<<<< HEAD
   - {fileID: 114716200941143834}
   stringsBankWriteTime: 637036615887339433
+=======
+  - {fileID: 114402670390862590}
+  stringsBankWriteTime: 637036481404497385
+>>>>>>> master
   cacheVersion: 3
---- !u!114 &114073135091785228
+--- !u!114 &114041677707003024
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38,6 +43,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: event:/Character/Abilities/Dash
   m_EditorClassIdentifier: 
@@ -80,42 +86,17 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: event:/Character/Abilities/Fireball
+=======
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Material
+>>>>>>> master
   m_EditorClassIdentifier: 
-  Path: event:/Character/Abilities/Fireball
-  guid: 2cc7e9f506e4524ab2fba64225d928dd
-  Banks:
-  - {fileID: 114700004205618882}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1950
---- !u!114 &114538633290707006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Environment/World Transition/World Transition Dark
-  m_EditorClassIdentifier: 
-  Path: event:/Environment/World Transition/World Transition Dark
-  guid: 6fab426f57b82640836476dbea5ed86a
-  Banks:
-  - {fileID: 114700004205618882}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1526
---- !u!114 &114662404650502720
+  Name: Material
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &114184733324918066
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,7 +111,7 @@ MonoBehaviour:
   Path: event:/Environment/World Transition/World Transition Light
   guid: 8bf72c16130bf6448a897ac1b0decf58
   Banks:
-  - {fileID: 114700004205618882}
+  - {fileID: 114552262169116728}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -138,7 +119,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2176
---- !u!114 &114700004205618882
+--- !u!114 &114239345080602498
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,35 +128,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Abilities/Dash
   m_EditorClassIdentifier: 
-  Path: C:/Users/ADMIN/Downloads/GameJam19/Para Worlds/FMOD/Jam Gam/Build/Desktop/Master.bank
-  SubDir: 
-  lastModified: 637036615887264575
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 1277664
-  Exists: 1
---- !u!114 &114702091447076574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Footsteps/Material
-  m_EditorClassIdentifier: 
-  Name: Material
-  Min: 0
-  Max: 1
-  Default: 0
-  Exists: 0
---- !u!114 &114716200941143834
+  Path: event:/Character/Abilities/Dash
+  guid: d6f0e4d3ecd70b488a7153cea1af890a
+  Banks:
+  - {fileID: 114552262169116728}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 847
+--- !u!114 &114402670390862590
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,15 +154,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: C:/Users/ADMIN/Downloads/GameJam19/Para Worlds/FMOD/Jam Gam/Build/Desktop/Master.strings.bank
+  Path: C:/Users/jfoster15/Documents/GameJam19/Para Worlds/FMOD/Jam Gam/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637036615887339433
+<<<<<<< HEAD
+  lastModified: 637036615887264575
+=======
+  lastModified: 637036481404497385
+>>>>>>> master
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 1114
   Exists: 1
---- !u!114 &114797776942111088
+--- !u!114 &114436864010659998
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -207,19 +178,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: event:/Character/Footsteps/Footsteps
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  Name: Material
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &114716200941143834
+=======
   Path: event:/Character/Footsteps/Footsteps
   guid: 28305001c6d5d448ae3fd4bff3094497
   Banks:
-  - {fileID: 114700004205618882}
+  - {fileID: 114552262169116728}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114218219400862812}
+  - {fileID: 114041677707003024}
   MinDistance: 0
   MaxDistance: 0
   Length: 305
---- !u!114 &114922632792290580
+--- !u!114 &114551032680955310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Abilities/Fireball
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Abilities/Fireball
+  guid: 2cc7e9f506e4524ab2fba64225d928dd
+  Banks:
+  - {fileID: 114552262169116728}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1950
+--- !u!114 &114552262169116728
+>>>>>>> master
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/jfoster15/Documents/GameJam19/Para Worlds/FMOD/Jam Gam/Build/Desktop/Master.bank
+  SubDir: 
+<<<<<<< HEAD
+  lastModified: 637036615887339433
+=======
+  lastModified: 637036481404756699
+>>>>>>> master
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1277664
+  Exists: 1
+--- !u!114 &114823245409002060
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -234,11 +261,40 @@ MonoBehaviour:
   Path: event:/Environment/Ambience/Ambience
   guid: a2a306beff08f44f87e680f2796abdc2
   Banks:
-  - {fileID: 114700004205618882}
+  - {fileID: 114552262169116728}
   IsStream: 1
   Is3D: 0
+<<<<<<< HEAD
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 114218219400862812}
+=======
   IsOneShot: 0
   Parameters: []
+>>>>>>> master
   MinDistance: 0
   MaxDistance: 0
   Length: 67000
+--- !u!114 &114987686354195198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Environment/World Transition/World Transition Dark
+  m_EditorClassIdentifier: 
+  Path: event:/Environment/World Transition/World Transition Dark
+  guid: 6fab426f57b82640836476dbea5ed86a
+  Banks:
+  - {fileID: 114552262169116728}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1526
