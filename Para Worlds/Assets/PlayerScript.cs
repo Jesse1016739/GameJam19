@@ -23,9 +23,13 @@ public class PlayerScript : MonoBehaviour
     public GameObject fireBall;
 
     public GameObject spawnPoint;
+
+    //FMOD EVENTS 
     FMOD.Studio.EventInstance DashAudio;
     FMOD.Studio.EventInstance JumpAudio;
-    
+    FMOD.Studio.EventInstance MirrorAudio;
+    FMOD.Studio.EventInstance Amb;
+
 
     // Start is called before the first frame update
     void Start()
@@ -34,8 +38,13 @@ public class PlayerScript : MonoBehaviour
 
         canJump = true;
         rb = gameObject.GetComponent<Rigidbody>();
+
+        //FMOD Instances
         DashAudio = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Abilities/Dash");
-        JumpAudio = FMODUnity.RuntimeManager.CreateInstance(""); 
+        JumpAudio = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Abilities/Double Jump");
+        MirrorAudio = FMODUnity.RuntimeManager.CreateInstance("event:/Environment/World Transition/World Transition");
+        Amb = FMODUnity.RuntimeManager.CreateInstance("event:/Environment/Ambience/Ambience");
+        Amb.start();
     }
 
     // Update is called once per frame
@@ -52,7 +61,8 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKeyDown("r"))
         {
             Mirror();
-
+            MirrorAudio.start();
+            
         }
 
         if (Input.GetKey("d"))
@@ -77,8 +87,7 @@ public class PlayerScript : MonoBehaviour
         }
         if (Input.GetKeyDown("q"))
         {
-            Dash();
-            DashAudio.start();
+            Dash();  
         }
 
         if (rb.velocity.magnitude > maxSpeed)
@@ -86,7 +95,16 @@ public class PlayerScript : MonoBehaviour
             rb.velocity = rb.velocity.normalized * maxSpeed;
         }
 
-        
+        if (isGhost == true)
+        {
+            Amb.setParameterByName("WorldChange", 1f);
+        }
+
+        if (isGhost == false)
+        {
+            Amb.setParameterByName("WorldChange", 0f);
+        }
+          
     }
     void OnCollisionEnter(Collision col)
     {
@@ -131,10 +149,10 @@ public class PlayerScript : MonoBehaviour
         {
             rb.AddRelativeForce(Vector3.up * jump);
             jumps++;
+            JumpAudio.start();
         }
         if(howManyJumps <= jumps)
         {
-
             canJump = false;
         }
     }
@@ -148,7 +166,7 @@ public class PlayerScript : MonoBehaviour
             rb.velocity = (Vector3.forward * dashSpeed);
             rb.useGravity = false;
             dashTimer = .5f;
-            
+            DashAudio.start();
         }
     }
 

@@ -1,12 +1,4 @@
 sceneSetups:
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-- path: Assets/Scenes/steve chill zone.unity
-=======
-- path: Assets/Scenes/Test Level.unity
->>>>>>> master
-=======
 - path: Assets/Scenes/Boi Tutorial.unity
->>>>>>> Stashed changes
   isLoaded: 1
   isActive: 1

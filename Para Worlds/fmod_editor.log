@@ -8,28 +8,87 @@
 [WRN] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-<<<<<<< HEAD
-[LOG] AsyncManager::init                       : manager 0000000041165708 isAsync 0 updatePeriod 0.02
-=======
-[LOG] AsyncManager::init                       : manager 0000000042B92308 isAsync 0 updatePeriod 0.02
->>>>>>> master
+[LOG] AsyncManager::init                       : manager 0000000039056C58 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
-<<<<<<< HEAD
-=======
 [LOG] Manager::readBank                        : fileversion = 121, compatVersion = 119 (oldest = 44, newest = 121)
 [LOG] Manager::readBank                        : fileversion = 121, compatVersion = 119 (oldest = 44, newest = 121)
 [LOG] Manager::readBank                        : fileversion = 121, compatVersion = 119 (oldest = 44, newest = 121)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSound                     : filename = C:\Users\ADMIN\Downloads\GameJam19\Para Worlds\FMOD\Jam Gam\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000000003BCE7778 : node = 000000005D9C14F0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000054D105E8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003BCE7778
+[LOG] SystemI::createSoundInternal             :     Create name='C:\Users\ADMIN\Downloads\GameJam19\Para Worlds\FMOD\Jam Gam\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2491616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 18400
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000005D9C1600
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='339326__inspectorj__bird-whistling-a', format=2, channels=2, frequency=48000, lengthbytes=314336, lengthpcm=1154727, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.118774.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003BCE7778
+[LOG] SoundI::getSubSound                      : sound 000000003BCE7778.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003BCE7928
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003BCE7928
+[LOG] Manager::readBank                        : fileversion = 121, compatVersion = 119 (oldest = 44, newest = 121)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003BCE7268
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003BCE7268
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003BCE75C8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003BCE75C8
+[LOG] Manager::readBank                        : fileversion = 121, compatVersion = 119 (oldest = 44, newest = 121)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003BCE7928
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003BCE7928
+[LOG] Manager::readBank                        : fileversion = 121, compatVersion = 119 (oldest = 44, newest = 121)
+[LOG] Manager::readBank                        : fileversion = 121, compatVersion = 119 (oldest = 44, newest = 121)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003BCE7268
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003BCE7268
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003BCE75C8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003BCE75C8
+[LOG] SoundI::release                          : 339326__inspectorj__bird-whistling-a (000000003BCE7778)
+[LOG] SoundI::release                          :     339326__inspectorj__bird-whistling-a (000000002CBEC7A8)
+[LOG] SoundI::release                          :     339326__inspectorj__bird-whistling-a (000000003BCE7928)
+[LOG] Manager::readBank                        : fileversion = 121, compatVersion = 119 (oldest = 44, newest = 121)
+[LOG] SoundI::release                          : Etherial (000000003BCE8BB8)
+[LOG] SoundI::release                          :     Etherial (0000000038B0DF58)
+[LOG] SoundI::release                          :     Etherial (000000003BCE75C8)
+[LOG] SoundI::release                          : Wind_Nested_Loop (000000003BCE86A8)
+[LOG] SoundI::release                          :     Wind_Nested_Loop (0000000038B0DC18)
+[LOG] SoundI::release                          :     Wind_Nested_Loop (000000003BCE7418)
+[LOG] SoundI::release                          : WindHowl_Nested_Loop (000000003BCE8348)
+[LOG] SoundI::release                          :     WindHowl_Nested_Loop (0000000038B0DA78)
+[LOG] SoundI::release                          :     WindHowl_Nested_Loop (000000003BCE7268)
+[LOG] SoundI::release                          :  (0000000049FF3FE8)
+[LOG] SoundI::release                          :     Jump Voice_02 (000000003670CE68)
+[LOG] SoundI::release                          :  (0000000049FF5578)
+[LOG] SoundI::release                          :     Jump Voice_03 (000000003670D1A8)
+[LOG] SoundI::release                          :  (0000000049FF4CD8)
+[LOG] SoundI::release                          :     Jump Voice_04 (000000003670C168)
+[LOG] SoundI::release                          :  (0000000049FF3B98)
+[LOG] SoundI::release                          :     Jump Voice_01 (000000003670CCC8)
+[LOG] SoundI::release                          :  (0000000049FF4E48)
+[LOG] SoundI::release                          :     Dash2 (000000003670BE28)
+[LOG] SoundI::release                          :  (0000000049FF45A8)
+[LOG] SoundI::release                          :     TransitionBasic_2 (000000003670D4E8)
+[LOG] SoundI::release                          :  (0000000049FF38B8)
+[LOG] SoundI::release                          :     TransitionBasic_3 (000000003670C308)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
->>>>>>> master
+[LOG] Manager::readBank                        : fileversion = 121, compatVersion = 119 (oldest = 44, newest = 121)
+[LOG] Manager::readBank                        : fileversion = 121, compatVersion = 119 (oldest = 44, newest = 121)
+[LOG] Manager::readBank                        : fileversion = 121, compatVersion = 119 (oldest = 44, newest = 121)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
