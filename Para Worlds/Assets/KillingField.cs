@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class KillingField : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    //public new vector3 (5.59, 9.82, -47.18);  
+/*
+    void OnTriggerEnter(Collider col)
     {
-        
+        if (collision.gameobject.tag == "Player")
+        {
+            transform.position = new Vector3(5.59, 9.82, -47.18);
+        }
     }
+*/
+/*
+    public void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+            transform.position = new Vector3(5.59, 9.82, -47.18);
+        }
+    }
+*/
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
