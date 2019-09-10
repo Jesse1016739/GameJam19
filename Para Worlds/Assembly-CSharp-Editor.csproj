@@ -310,6 +310,16 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+<<<<<<< HEAD
+=======
+    <Reference Include="UnityEngine.Advertisements">
+<<<<<<< Updated upstream
+      <HintPath>C:/Users/janderton2/Documents/GameJam19/Para Worlds/Library/PackageCache/com.unity.ads@2.0.8/UnityEngine.Advertisements.dll</HintPath>
+=======
+      <HintPath>C:/Users/jfoster15/Documents/GameJam19/Para Worlds/Library/PackageCache/com.unity.ads@2.0.8/UnityEngine.Advertisements.dll</HintPath>
+>>>>>>> Stashed changes
+    </Reference>
+>>>>>>> master
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>C:/Users/janderton2/Documents/GameJam19/Para Worlds/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
@@ -322,6 +332,15 @@
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>C:/Users/janderton2/Documents/GameJam19/Para Worlds/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
+<<<<<<< HEAD
+=======
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>C:/Users/janderton2/Documents/GameJam19/Para Worlds/Library/PackageCache/com.unity.purchasing@2.0.3/UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>C:/Users/jfoster15/Documents/GameJam19/Para Worlds/Library/PackageCache/com.unity.purchasing@2.0.3/UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+>>>>>>> master
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>C:/Users/janderton2/Documents/GameJam19/Para Worlds/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>

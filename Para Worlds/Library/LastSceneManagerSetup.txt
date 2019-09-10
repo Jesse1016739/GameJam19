@@ -1,5 +1,13 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: C:/Users/janderton2/Documents/GameJam19BAK/Para Worlds/Assets/Scenes/Level
     1.unity
+=======
+<<<<<<< Updated upstream
+- path: Assets/Scenes/Test Level.unity
+=======
+- path: Assets/Scenes/Boi Tutorial.unity
+>>>>>>> Stashed changes
+>>>>>>> master
   isLoaded: 1
   isActive: 1
