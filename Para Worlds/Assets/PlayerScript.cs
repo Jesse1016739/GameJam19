@@ -30,7 +30,7 @@ public class PlayerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        isGhost = false;
+        isGhost = true;
 
         canJump = true;
         rb = gameObject.GetComponent<Rigidbody>();
