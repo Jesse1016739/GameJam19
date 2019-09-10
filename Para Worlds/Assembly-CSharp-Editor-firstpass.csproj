@@ -91,6 +91,7 @@
     <Compile Include="Assets\Plugins\FMOD\src\Editor\StudioParameterTriggerEditor.cs" />
     <Compile Include="Assets\Plugins\FMOD\src\Editor\Timeline\FMODEventPlayableEditor.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       <HintPath>C:/Users/ADMIN/Downloads/GameJam19/Para Worlds/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -122,6 +123,9 @@
       <HintPath>C:/Users/janderton2/Documents/GameJam19/Para Worlds/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
 =======
       <HintPath>C:/Users/Sgreenland/Downloads/GameJam19/Para Worlds/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+=======
+      <HintPath>C:/Users/jfoster15/Documents/GameJam19/Para Worlds/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+>>>>>>> Stashed changes
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>C:/Users/Sgreenland/Downloads/GameJam19/Para Worlds/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
@@ -133,9 +137,13 @@
       <HintPath>C:/Users/Sgreenland/Downloads/GameJam19/Para Worlds/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
+<<<<<<< Updated upstream
       <HintPath>C:/Users/Sgreenland/Downloads/GameJam19/Para Worlds/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
 >>>>>>> master
 >>>>>>> master
+=======
+      <HintPath>C:/Users/jfoster15/Documents/GameJam19/Para Worlds/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+>>>>>>> Stashed changes
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -372,6 +380,7 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       <HintPath>C:/Users/ADMIN/Downloads/GameJam19/Para Worlds/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
@@ -403,6 +412,9 @@
       <HintPath>C:/Users/janderton2/Documents/GameJam19/Para Worlds/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
 =======
       <HintPath>C:/Users/Sgreenland/Downloads/GameJam19/Para Worlds/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+=======
+      <HintPath>C:/Users/jfoster15/Documents/GameJam19/Para Worlds/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+>>>>>>> Stashed changes
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>C:/Users/Sgreenland/Downloads/GameJam19/Para Worlds/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
@@ -414,9 +426,13 @@
       <HintPath>C:/Users/Sgreenland/Downloads/GameJam19/Para Worlds/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
+<<<<<<< Updated upstream
       <HintPath>C:/Users/Sgreenland/Downloads/GameJam19/Para Worlds/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
 >>>>>>> master
 >>>>>>> master
+=======
+      <HintPath>C:/Users/jfoster15/Documents/GameJam19/Para Worlds/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
+>>>>>>> Stashed changes
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
